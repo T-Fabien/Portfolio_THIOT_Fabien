@@ -1,0 +1,41 @@
+.global__info{
+    align-items: center;
+    background-color: $dark;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    & hr{
+        border: 0;
+        height: 1px;
+        width: 80%;
+        background-color: $white;
+        margin-bottom: 30px;
+    }
+
+    & h3{
+        color: $lightblue;
+        font-size: 48px;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+
+    & .global__info__resume {
+        color: #a0a0a0;
+        margin: 20px 0;
+        text-align: left;
+        width: 640px;
+    }
+
+    & .global__info__btn {
+        @include btn;
+        @include btn_primary;
+        position: relative;
+        left: -255px;
+    }
+}
+
+.global__info__cards{
+    display: flex;
+    margin-bottom: 200px;
+}

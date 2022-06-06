@@ -1,0 +1,29 @@
+header {
+  display: flex;
+  flex-direction: row;
+  font-size: 24px;
+  font-weight: 600;
+  height: 100px;
+  justify-content: space-between;
+  padding: 0 5%;
+  align-items: center;
+
+  & p {
+    font-size: 32px;
+  }
+}
+
+nav{
+  & a {
+    color: $white;
+    margin: 0 12.5px;
+    text-decoration: none;
+  }
+  & a:hover {
+    color: lighten($darkblue, 50%);
+  }
+
+  & .active, .active:hover{
+    color: $lightblue;
+  }
+}

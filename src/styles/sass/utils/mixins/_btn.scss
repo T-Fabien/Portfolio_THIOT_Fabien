@@ -1,0 +1,20 @@
+@mixin btn {
+    font-size: 24px;
+    font-weight: 500;
+    padding: 20px 20px;
+    text-align: center;
+    text-decoration: none;
+}
+
+@mixin btn_primary {
+    background-color: $blue;
+    border: none;
+    color: white;
+}
+
+@mixin btn_secondary {
+    background-color: $dark;
+
+    border: 1px solid $lightblue;
+    color: $lightblue;
+}
