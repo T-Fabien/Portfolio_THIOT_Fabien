@@ -50,7 +50,9 @@
   text-transform: uppercase;
 }
 
-.btn_primary p {
+.btn_primary a {
+  text-decoration: none;
+  padding: 20px;
   color: $white;
   position: relative;
   z-index: 1;

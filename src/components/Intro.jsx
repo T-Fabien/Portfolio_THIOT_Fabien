@@ -4,6 +4,8 @@ import EmailIcon from "@material-ui/icons/Email";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import DoubleArrowIcon from '@material-ui/icons/DoubleArrow';
 
+import CV from "../assets/other/CV_THIOT_Fabien.pdf";
+
 function Intro() {
   return (
     <section className="intro">
@@ -22,7 +24,7 @@ function Intro() {
       </div>
       <div>
         <button className="intro__btn btn_primary">
-          <p>Télécharger le CV</p> <i></i>
+          <a href={CV} download="CV_THIOT_Fabien.pdf">Télécharger le CV</a> <i></i>
         </button>
       </div>
       <a href="#global__info" className="intro__arrow">
