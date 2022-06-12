@@ -1,32 +1,39 @@
-.global__info__card{
-    position: relative;
-    align-items: center;
-    border-radius: 15px;
-    display: flex;
-    flex-direction: column;
-    margin: 0 10px;
-    width: 300px;
-    height: 200px;
-    transition: 0.5s;
-
-    & img{
-        width: 64px;
-        filter: invert(0.9);
-        margin: 20px 0;
+.global__info__card {
+    a{
+        position: relative;
+        align-items: center;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        margin: 0 10px;
+        width: 300px;
+        height: 200px;
+        transition: 0.5s;
+    
+        & img{
+            width: 64px;
+            filter: invert(0.9);
+            margin: 20px 0;
+        }
+    
+        & .global__info__cards__education{
+            width: 64px;
+        }
+    
+        & h4{
+            font-size: 18px;
+            font-weight: 700;
+            padding-bottom: 20px;
+        }
+        p{
+            text-align: center;
+            text-decoration: none;
+            margin-bottom: 5px;
+        }
     }
-
-    & .global__info__cards__education{
-        width: 64px;
-    }
-
-    & h4{
-        font-size: 18px;
-        font-weight: 700;
-        padding-bottom: 20px;
-    }
-    p{
-        text-align: center;
-        margin-bottom: 5px;
+    a, a:visited, a:hover, a:active{
+        text-decoration: none;
+        color: $white;
     }
 }
 
@@ -68,11 +75,11 @@
 }
 
 .Office:hover .card__face1{
-    background-color: darkcyan;
+    background-color: darkgoldenrod;
 }
 
 .Project:hover .card__face1{
-    background-color: darkgoldenrod;
+    background-color: darkcyan;
 }
 
 

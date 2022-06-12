@@ -9,9 +9,11 @@ import Navbar from "./components/Navbar";
 
 // Pages
 import Homepage from "./pages/Homepage";
+import Aboutme from './pages/Aboutme';
 
 // CSS
-import "./styles/style.css"
+import "./styles/sass/style.css"
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -20,7 +22,8 @@ root.render(
       <Navbar/>
       <Routes>
         <Route exact path="/" element={<Homepage />} />
-        <Route />
+        <Route exact path="/aboutme" element={<Aboutme />} />
+        <Route exact path="*" element={<Homepage />} />
         <Route />
       </Routes>
     </Router>

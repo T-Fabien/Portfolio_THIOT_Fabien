@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import GlobalInfoCard from "./GlobalInfoCard";
 
@@ -11,17 +12,31 @@ function GlobalInfo() {
     <section className="global__info" id="global__info">
       <hr></hr>
       <h3>Mes Informations</h3>
+      <p className="global__info__resume">
+        Passionné de développement depuis que j’ai 12 ans, j’ai commencé en
+        modifiant des fichiers JSON qui changé les propriétés d’un serveur
+        Minecraft. C’est en les modifiants, avoir quelque chose qui était selon
+        ma vision ou mes envies, que cela a lancé ma passion pour le web. Je me
+        suis donc orienté après le BAC dans un BTS orienté développement orienté
+        objet (C#), puis une Licence Professionnelle et une formation
+        Openclassrooms sur le développement web.
+        <br />
+        Je suis désormais titulaire d’un double bac + 3 et a la recherche d’un
+        emploi en tant que Développeur Frontend.
+      </p>
       <div className="global__info__cards">
         <GlobalInfoCard
           class="Education"
+          link="/aboutme"
           img={Education}
           imgclass="global__info__cards__education"
           title="Diplômes"
-          text="Bac+3: Licence T2I"
-          secondtext="Bac+3/4: Formation Front-End"
+          text="Bac+3/4: Développeur JavaScript React"
+          secondtext="Bac+3: Licence T2I"
         />
         <GlobalInfoCard
           class="Office"
+          link="/aboutme"
           img={Office}
           imgclass="global__info__cards__education"
           title="Expérience Pro"
@@ -29,20 +44,17 @@ function GlobalInfo() {
         />
         <GlobalInfoCard
           class="Project"
+          link="/projects"
           img={Project}
           imgclass="global__info__cards__education"
           title="Projets"
           text="11+ Projets"
         />
       </div>
-      <p className="global__info__resume">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum est
-        voluptas vel commodi, itaque maxime modi molestiae sed voluptatibus
-        aspernatur repellendus aperiam molestias iste, quaerat, expedita
-        temporibus at necessitatibus unde! Quae illo, dolorem tempore rerum
-        expedita asperiores iure obcaecati, ratione vel sed possimus veritatis
-        delectus sunt quas soluta, facere velit nemo.
-      </p>
+      <button className="global__info__btn btn_primary">
+        <Link to="/contact">Contacter moi</Link>
+        <i></i>
+      </button>
     </section>
   );
 }
