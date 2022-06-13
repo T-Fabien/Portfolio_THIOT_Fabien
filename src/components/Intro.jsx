@@ -31,7 +31,7 @@ function Intro() {
         <Link to="/contact">Contacter moi</Link> <i></i>
         </button>
       </div>
-      <Link to="/#global__info" className="intro__arrow">
+      <Link to={{pathname: "/", hash: "#global__info"}} className="intro__arrow">
       <DoubleArrowIcon />
       </Link>
     </section>
