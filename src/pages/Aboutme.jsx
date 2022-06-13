@@ -90,6 +90,9 @@ function Aboutme() {
           <p>
             Licence Professionnelle Technologie de l'Information et Internet
           </p>
+          <p>
+            Mention : Assez Bien
+          </p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"

@@ -10,6 +10,7 @@ import Navbar from "./components/Navbar";
 // Pages
 import Homepage from "./pages/Homepage";
 import Aboutme from './pages/Aboutme';
+import Project from './pages/Project';
 
 // CSS
 import "./styles/sass/style.css"
@@ -23,6 +24,7 @@ root.render(
       <Routes>
         <Route exact path="/" element={<Homepage />} />
         <Route exact path="/aboutme" element={<Aboutme />} />
+        <Route exact path="/projects" element={<Project />} />
         <Route exact path="*" element={<Homepage />} />
         <Route />
       </Routes>

@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { HashLink } from 'react-router-hash-link';
 
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
@@ -30,7 +29,7 @@ function Intro() {
           <a href={CV} download="CV_THIOT_Fabien.pdf">Télécharger le CV</a> <i></i>
         </button>
         <button className="intro__btn btn_primary">
-        <Link to="/contact">Contacter moi</Link> <i></i>
+        <a href="mailto:fabienthiot@gmail.com">Contacter moi</a> <i></i>
         </button>
       </div>
       <HashLink to="#global__info" className="intro__arrow">

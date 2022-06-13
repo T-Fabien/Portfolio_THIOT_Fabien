@@ -9,6 +9,8 @@
 @import "./components/_Intro";
 @import "./components/GlobalInfo";
 @import "./components/GlobalInfoCard";
+@import "./components/projectGrid";
+@import "./components/projectCard";
 
 /* Layout */
 @import "./layout/navbar";
@@ -16,3 +18,4 @@
 /* Pages */
 @import "./pages/homepage";
 @import "./pages/aboutme";
+@import "./pages/project";
