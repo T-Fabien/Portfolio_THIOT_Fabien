@@ -1,5 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { HashLink } from 'react-router-hash-link';
+
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import EmailIcon from "@material-ui/icons/Email";
 import GitHubIcon from "@material-ui/icons/GitHub";
@@ -31,9 +33,9 @@ function Intro() {
         <Link to="/contact">Contacter moi</Link> <i></i>
         </button>
       </div>
-      <Link to={{pathname: "", hash: "#global__info"}} className="intro__arrow">
+      <HashLink to="#global__info" className="intro__arrow">
       <DoubleArrowIcon />
-      </Link>
+      </HashLink>
     </section>
   );
 }
