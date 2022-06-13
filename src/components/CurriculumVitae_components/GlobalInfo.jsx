@@ -9,7 +9,7 @@ import Project from "../../assets/images/data.png";
 
 function GlobalInfo() {
   return (
-    <section className="global__info" key="global__info">
+    <section className="global__info" id="global__info">
       <hr></hr>
       <h3>Mes Informations</h3>
       <p className="global__info__resume">
