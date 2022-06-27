@@ -29,7 +29,7 @@ function Intro() {
           <a href={CV} download="CV_THIOT_Fabien.pdf">Télécharger le CV</a> <i></i>
         </button>
         <button className="intro__btn btn_primary">
-        <a href="mailto:fabienthiot@gmail.com">Contacter moi</a> <i></i>
+        <a href="mailto:fabienthiot@gmail.com">Contactez moi</a> <i></i>
         </button>
       </div>
       <HashLink to="#global__info" className="intro__arrow">

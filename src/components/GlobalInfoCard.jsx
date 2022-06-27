@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function GlobalInfoCard(props) {
   return (
-    <div className={"global__info__card " + props.class} >
+    <div className={"global__info__card card__" + props.class} >
       <Link to={props.link}>
       <div className="card__face1 face">
         <img src={props.img} alt="" className={props.imgclass} />

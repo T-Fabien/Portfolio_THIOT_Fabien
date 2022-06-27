@@ -1,0 +1,79 @@
+.modal {
+  align-items: center;
+  background-color: rgba(lighten($dark, 10), 1);
+  border-radius: 20px;
+  box-shadow: 0px 0px 7px lighten($dark, 20);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  max-width: 90%;
+  max-height: 90%;
+  position: fixed;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 20px;
+
+  .close-modal{
+    cursor: pointer;
+    font-size: 32px;
+    padding: 15px 20px;
+    position: absolute;
+    right : 20px;
+    top: 0px;
+    z-index: 2;
+  }
+
+  .carousel-root {
+    height: 90%;
+    padding-top: 30px;
+  }
+
+  .carousel {
+    height: 100%;
+    .control-dots {
+      bottom: 0px;
+    }
+    .slide .legend {
+      opacity: 0.8;
+      bottom: 0px;
+      position: relative;
+    }
+    .control-arrow{
+      display: flex;
+      align-items: center;
+      opacity: 1;
+    }
+    .control-arrow:before {
+      border-top: 32px solid transparent;
+      border-bottom: 32px solid transparent;
+    }
+    .control-prev.control-arrow:before{
+      border-right: 32px solid #fff;
+    }
+    .control-next.control-arrow:before {
+      border-left: 32px solid #fff;
+    }
+  }
+  .control-arrow {
+    width: 75px;
+  }
+
+  &__img {
+    max-height: 70vh;
+    object-fit: contain;
+  }
+  &__links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+
+    & .btn_primary {
+      margin: 0 20px;
+    }
+  }
+}

@@ -74,8 +74,8 @@ function Aboutme() {
             France, Valenciennes, 59300
           </h4>
           <p>
-            – Amélioration de l’interface avec des nouvelles features<br />
-            – Développer un module C#
+            – Amélioration de l’interface avec des nouvelles features
+            <br />– Développer un module C#
           </p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
@@ -90,9 +90,7 @@ function Aboutme() {
           <p>
             Licence Professionnelle Technologie de l'Information et Internet
           </p>
-          <p>
-            Mention : Assez Bien
-          </p>
+          <p>Mention : Assez Bien</p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
@@ -107,9 +105,19 @@ function Aboutme() {
             Belgique, Frameries, 7080
           </h4>
           <p>
-            – Développer un module Angular <br />
-            – Intégration CSS
+            – Développer un module Angular <br />– Intégration CSS
           </p>
+        </VerticalTimelineElement>
+        <VerticalTimelineElement
+          className="vertical-timeline-element--education"
+          date="2021 - 2022"
+          iconStyle={{ background: "#006400", color: "#fff" }}
+          icon={<SchoolIcon />}
+        >
+          <h3 className="vertical-timeline-element-title">
+            Openclassrooms, à distance, Valenciennes, 59300
+          </h3>
+          <p>Formation Développeur d'application - JavaScript React</p>
         </VerticalTimelineElement>
       </VerticalTimeline>
     </div>
