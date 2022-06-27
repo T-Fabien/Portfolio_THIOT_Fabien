@@ -22,7 +22,7 @@ function Carrousel(props) {
         {props.img_items.map((img, index) => {
           return (
             <div key={index}>
-              <img className="modal__img" src={img} />
+              <img className="modal__img" src={img} alt={"Image du site" + props.title}/>
               <div className="legend">
                 <p className="project__grid__card__title">{props.title} </p>
                 <div className="project__grid__card__tags ">
@@ -49,7 +49,7 @@ function Carrousel(props) {
           </button>
         )}
         <button className="btn_primary" onClick={() => props.setShow(false)}>
-          <a>Fermer</a> <i></i>
+          <p>Fermer</p> <i></i>
         </button>
       </div>
     </div>
