@@ -22,23 +22,25 @@ function Carrousel(props) {
         {props.img_items.map((img, index) => {
           return (
             <div key={index}>
-              <img className="modal__img" src={img} alt={"Image du site" + props.title}/>
-              <div className="legend">
-                <p className="project__grid__card__title">{props.title} </p>
-                <div className="project__grid__card__tags ">
-                  <p className="html">HTML / CSS</p>
-                  {props.langage && <p className="langage">{props.langage}</p>}
-                  {props.framework && (
-                    <p className="framework">{props.framework}</p>
-                  )}
-                  {props.library && <p className="library">{props.library}</p>}
-                  {props.option && <p className="option">{props.option}</p>}
-                </div>
-              </div>
+              <img
+                className="modal__img"
+                src={img}
+                alt={"Image du site" + props.title}
+              />
             </div>
           );
         })}
       </Carousel>
+      <div className="legend">
+        <p className="project__grid__card__title legend__title">{props.title} </p>
+        <div className="project__grid__card__tags legend__tags">
+          <p className="html">HTML / CSS</p>
+          {props.langage && <p className="langage">{props.langage}</p>}
+          {props.framework && <p className="framework">{props.framework}</p>}
+          {props.library && <p className="library">{props.library}</p>}
+          {props.option && <p className="option">{props.option}</p>}
+        </div>
+      </div>
       <div className="modal__links">
         <button className="btn_primary">
           <a href={props.link}>Lien GitHub</a> <i></i>

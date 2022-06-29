@@ -10,9 +10,16 @@
   background-color: $white;
   border: none;
   color: white;
-  & a, p {
+  & a{
     text-decoration: none;
     padding: 20px;
+    color: $white;
+    position: relative;
+    z-index: 1;
+  }
+  & p{
+    text-decoration: none;
+    padding: 0 20px;
     color: $white;
     position: relative;
     z-index: 1;
@@ -58,11 +65,6 @@
     background-color: $lightblue;
     box-shadow: 0 0 35px $lightblue;
     cursor: pointer;
-  }
-  &:hover p {
-    color: $lightblue;
-    transition: 0.8s;
-    letter-spacing: 2px;
   }
   &:hover i::before {
     width: 20px;

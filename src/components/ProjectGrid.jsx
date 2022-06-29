@@ -47,7 +47,7 @@ function ProjectGrid() {
       />
       <ProjectCard
         img={require("../assets/images/site/Thumbnail/Paladins_Thumbnail.png")}
-        title="SportSee - Tableau de bord d'analytics"
+        title="Paladins - Guide sur les personnages"
         langage="JS"
         items={[
           require("../assets/images/site/Paladins/ChampionListPage.png"),

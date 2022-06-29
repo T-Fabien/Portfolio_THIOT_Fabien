@@ -11,6 +11,7 @@ nav{
     color: $white;
     margin: 0 12.5px;
     text-decoration: none;
+    font-weight: 600;
   }
   & a:hover {
     color: lighten($darkblue, 50%);

@@ -1,5 +1,4 @@
 import React from 'react'
-
 import ProjectGrid from '../components/ProjectGrid'
 
 function Project() {
