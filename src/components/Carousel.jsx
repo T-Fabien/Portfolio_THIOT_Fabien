@@ -31,9 +31,6 @@ function Carrousel(props) {
           );
         })}
       </Carousel>
-      <div className="legend">
-        <p className="project__grid__card__title legend__title">{props.title} </p>
-        </div>
     </div>
   );
 }

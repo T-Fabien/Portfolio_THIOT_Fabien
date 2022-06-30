@@ -67,11 +67,6 @@
       border: 3px solid #fff;
     }
   }
-  .legend{
-    position: absolute;
-    bottom: 80px;
-  }
-
 }
 
 @media (max-height: 750px) {
@@ -84,10 +79,6 @@
 @media (max-height: 500px) {
   .thumbs {
     display: none;
-  }
-  .modal .legend{
-    position: absolute;
-    bottom: 20px;
   }
 }
 
