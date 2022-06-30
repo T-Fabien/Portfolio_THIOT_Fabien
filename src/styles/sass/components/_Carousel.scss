@@ -4,18 +4,19 @@
   border-radius: 20px;
   box-shadow: 0px 0px 7px lighten($dark, 20);
   color: white;
+  cursor: default;
   display: flex;
   flex-direction: column;
   margin: auto;
   max-width: 90%;
-  min-height: 300px;
-  max-height: 93%;
+  max-height: calc(100% - 80px);
   position: fixed;
   bottom: 0;
   top: 40px;
   left: 0;
   right: 0;
-  padding: 10px 20px;
+  padding: 10px 0px;
+  z-index: 2;
 
   .close-modal {
     cursor: pointer;
@@ -27,249 +28,88 @@
     z-index: 2;
   }
 
-  .carousel-root {
-    height: 90%;
+  .carousel-root{
+    width: 100%;
   }
 
-  .carousel-slider {
-    height: 100%;
-    .thumbs-wrapper {
-      overflow: visible;
-    }
-
-    .control-dots {
-      bottom: 60px;
-    }
-    .control-arrow {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      opacity: 1;
-      height: 50%;
-      margin-top: 20vh;
-    }
-    .control-arrow:before {
-      border-top: 32px solid transparent;
-      border-bottom: 32px solid transparent;
-    }
-    .control-prev.control-arrow:before {
-      border-right: 32px solid #fff;
-    }
-    .control-next.control-arrow:before {
-      border-left: 32px solid #fff;
-    }
-
-    .thumbs {
-      position: relative;
-      bottom: 100px;
-      .thumb {
-        border: 3px solid #333;
-      }
-      .selected {
-        border: 3px solid #fff;
-      }
-    }
-  }
-  .control-arrow {
-    width: 75px;
+  .carousel.carousel-slider .control-arrow {
+    height: 50%;
+    margin-top: 20vh;
+    opacity: 1;
   }
 
-  .slide .modal__img {
-    position: relative;
-    max-height: calc(73vh - 20px);
+   .carousel .control-arrow:before {
+    border-top: 32px solid transparent;
+    border-bottom: 32px solid transparent;
+  }
+  .control-prev.control-arrow:before {
+    border-right: 32px solid #fff;
+  }
+  .control-next.control-arrow:before {
+    border-left: 32px solid #fff;
+  }
+
+  .slide .modal__img{
+    height: calc(90vh - 130px);
+    width: calc(84vw - 50px);
     object-fit: contain;
-    z-index: 2;
   }
 
-  & .legend {
+  .thumbs-wrapper {
+    bottom: -20px;
     position: relative;
+  }
+  .thumbs {
+    .thumb {
+      border: 3px solid #333;
+    }
+    .selected {
+      border: 3px solid #fff;
+    }
+  }
+  .legend{
+    position: absolute;
     bottom: 80px;
-
-    .legend__title {
-      font-weight: 500;
-    }
-    .legend__tags p {
-      font-weight: 400;
-    }
   }
 
-  &__links {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    bottom: 70px;
+}
 
-    & .btn_primary {
-      margin: 10px 20px 0 20px;
-      padding: 16px 0;
-    }
+@media (max-height: 750px) {
+  .modal .legend{
+    position: absolute;
+    bottom: 60px;
   }
 }
 
-/* ---- Responsive ---- */
-@media (max-width: 1440px) {
-  .modal {
-    padding: 10px 0;
-    .slide .modal__img {
-      max-width: calc(80vw - 20px);
-    }
+@media (max-height: 500px) {
+  .thumbs {
+    display: none;
+  }
+  .modal .legend{
+    position: absolute;
+    bottom: 20px;
   }
 }
 
-@media (max-width: 1024px) {
-  .modal {
-    padding: 10px 0;
-    .slide .modal__img {
-      max-width: calc(75vw - 20px);
-    }
-    .carousel .thumbs-wrapper{
-      display: none;
-    }
-    .carousel-slider {
-      .control-dots {
-        bottom: 130px;
-      }
-      .control-arrow {
-        height: 50%;
-        margin-top: 10vh;
-      }
-      .thumbs{
-        position: relative;
-        bottom: 170px;
-      }
-    }
-    .btn_primary {
-      font-size: 16px;
-      padding: 16px 0;
-      margin:  10px 15px;
-      & a {
-        padding: 16px;
-      }
-    }
-  }
-}
+
 
 @media (max-width: 768px) {
-  .modal {
-    padding: 10px 0;
-    height: 80%;
-    .slide .modal__img {
-      max-width: calc(70vw - 20px);
+  .modal{
+    .carousel .control-arrow:before {
+      border-top: 16px solid transparent;
+      border-bottom: 16px solid transparent;
     }
-    .thumbs{
-      display: none;
+    .control-prev.control-arrow:before {
+      border-right: 16px solid #fff;
     }
-    .carousel .thumbs-wrapper{
-      display: none;
+    .control-next.control-arrow:before {
+      border-left: 16px solid #fff;
     }
-    .carousel-slider {
-      .control-dots {
-        bottom: 20px;
-      }
-      .control-arrow {
-        height: 25%;
-        margin-top: 7vh;
-        width: 40px;
-      }
-      .control-arrow:before {
-        border-top: 16px solid transparent;
-        border-bottom: 16px solid transparent;
-      }
-      .control-prev.control-arrow:before {
-        border-right: 16px solid #fff;
-      }
-      .control-next.control-arrow:before {
-        border-left: 16px solid #fff;
-      }
-    }
-    .btn_primary {
-      font-size: 16px;
-      padding: 16px 0;
-      margin:  10px 15px;
-      & a {
-        padding: 16px;
-      }
-    }
-    .legend{
-      bottom: 20px;
-    }
-    .modal__links{
-      bottom: 15px;
+    .control-dots{
+      bottom: 60px;
     }
   }
-}
-
-@media (max-width: 425px) {
-  .modal {
-    padding: 10px 0;
-    height: 80%;
-    .slide .modal__img {
-      max-width: calc(70vw - 20px);
-    }
-    .thumbs{
-      display: none;
-    }
-    .carousel-slider {
-      .control-dots {
-        bottom: 20px;
-      }
-      .control-arrow {
-        height: 25%;
-        margin-top: 7vh;
-        width: 40px;
-      }
-
-      .control-arrow:before {
-        border-top: 16px solid transparent;
-        border-bottom: 16px solid transparent;
-      }
-      .control-prev.control-arrow:before {
-        border-right: 16px solid #fff;
-      }
-      .control-next.control-arrow:before {
-        border-left: 16px solid #fff;
-      }
-    }
-    &__links{
-
-      .btn_primary {
-        font-size: 12px;
-        padding: 10px 5px;
-        margin:  10px 5px;
-        & a{
-          padding: 16px 0;
-          text-align: center;
-        }
-        & p {
-          padding: 10px;
-          text-align: center;
-        }
-        & i::before {
-          left: 70%;
-        }
-        & i::after {
-          left: 20%;
-        }
-        &:hover i::before {
-          width: 20px;
-          left: 20%;
-        }
-        &:hover i::after {
-          width: 20px;
-          left: 60%;
-        }
-      }
-    }
-    .legend{
-      bottom: 20px;
-      .legend__title{
-        text-align: center;
-      }
-    }
-    .modal__links{
-      bottom: 15px;
-    }
+  .thumbs {
+    display: none;
   }
 }

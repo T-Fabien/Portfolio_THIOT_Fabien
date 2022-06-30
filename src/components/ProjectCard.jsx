@@ -23,6 +23,16 @@ function ProjectCard(props) {
           {props.option && <p className="option">{props.option}</p>}
         </div>
       </button>
+      <div className="project__grid__card__links">
+        <button className="btn_primary">
+          <a href={props.link}>Lien GitHub</a> <i></i>
+        </button>
+        {props.hebergement && (
+          <button className="btn_primary">
+            <a href={props.hebergement}>Lien vers le site</a> <i></i>
+          </button>
+        )}
+      </div>
       <div>
         {modalIsOpen && (
           <ModalCarroussel
