@@ -24,7 +24,7 @@ function Intro() {
           <GitHubIcon />
         </a>
       </div>
-      <div>
+      <div className="intro__contact">
         <button className="intro__btn btn_primary">
           <a href={CV} download="CV_THIOT_Fabien.pdf">Télécharger le CV</a> <i></i>
         </button>

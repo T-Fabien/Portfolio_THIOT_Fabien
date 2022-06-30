@@ -21,3 +21,15 @@ nav{
     color: $lightblue;
   }
 }
+
+/* ---- Responsive ---- */
+@media (max-width: 768px) 
+{
+  nav{
+    font-size: 16px;
+    padding: 0 2%;
+    & a{
+      margin: 0 10px;
+    }
+  }
+}

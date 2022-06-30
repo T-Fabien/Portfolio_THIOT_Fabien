@@ -26,7 +26,6 @@ function CurriculumVitae() {
       <div className="global__info__cards">
         <GlobalInfoCard
           class="education"
-          link="/aboutme"
           img={Education}
           imgclass="global__info__cards__education"
           title="Diplômes"
@@ -35,7 +34,6 @@ function CurriculumVitae() {
         />
         <GlobalInfoCard
           class="office"
-          link="/aboutme"
           img={Office}
           imgclass="global__info__cards__office"
           title="Expérience Pro"
@@ -43,7 +41,6 @@ function CurriculumVitae() {
         />
         <GlobalInfoCard
           class="project"
-          link="/projects"
           img={Project}
           imgclass="global__info__cards__projects"
           title="Projets"

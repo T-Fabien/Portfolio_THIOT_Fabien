@@ -1,5 +1,4 @@
 .global__info__card {
-    a{
         position: relative;
         align-items: center;
         border-radius: 15px;
@@ -22,7 +21,7 @@
     
         & h4{
             font-size: 18px;
-            font-weight: 700;
+            font-weight: 600;
             padding-bottom: 20px;
         }
         p{
@@ -30,11 +29,6 @@
             text-decoration: none;
             margin-bottom: 5px;
         }
-    }
-    a, a:visited, a:hover, a:active{
-        text-decoration: none;
-        color: $white;
-    }
 }
 
 .face {
@@ -85,9 +79,45 @@
     background-color: darkcyan;
 }
 
+/* ---- Responsive ---- */
+@media (max-width: 1024px) 
+{
+    .global__info__card {
+        width: 225px;
+        margin: 0 15px;
+    }
+    
+    .card__face2 {
+        width: 225px;
+        transform: translateY(-30px);
+    }
+}
 
+@media (max-width: 768px) 
+{
+    .global__info__card {
+        width: 300px;
+        margin: 20px;
+    }
+    
+    .card__face2 {
+        width: 300px;
+        transform: translateY(-30px);
+    }
+}
 
-
-
-
-
+@media (max-width: 425px) 
+{
+    .global__info__card {
+        width: 80%;
+        margin: 20px;
+        & p {
+            font-size: 14px;
+        }
+    }
+    
+    .card__face2 {
+        width: 100%;
+        transform: translateY(-30px);
+    }
+}

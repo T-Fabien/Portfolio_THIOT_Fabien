@@ -12,3 +12,12 @@
         font-weight: 700;
     }
 }
+
+/* ---- Responsive ---- */
+  @media (max-width: 1024px) {
+    .project {
+      & h1 {
+        font-size: 32px;
+      }
+    }
+  }
